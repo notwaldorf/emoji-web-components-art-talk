@@ -1,0 +1,524 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+  <title>👻</title>
+
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="bower_components/literally/a-presentation.html">
+  <link rel="import" href="bower_components/literally/a-slide.html">
+  <link rel="import" href="bower_components/emoji-rain/emoji-rain.html">
+
+  <link rel="stylesheet" href="bower_components/literally/sample-theme.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700italic,700,400italic,100,100italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+  <style>
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      -webkit-overflow-scrolling: auto;
+      font-family: 'Fira Sans', 'Oswald', 'Montserrat', 'Roboto', sans-serif;
+    }
+
+    .title {
+      text-transform: lowercase;
+
+    }
+
+    pre {
+      font-family: 'Inconsolata', monospace;
+    }
+
+    .pizza {
+      position: absolute;
+      top: -10%;
+      left: 20%;
+      height: 200vh;
+      opacity: 0.05;
+    }
+
+    .cheese {
+      position: absolute;
+      top: -30%;
+      left: 20%;
+      height: 200vh;
+      opacity: 0.05;
+    }
+
+    /* faded */
+    .text-coral {color: #f49581; }
+    .text-orange { color: #f5c795; }
+    .text-green {color: #5fc4b4; }
+    .text-black {color: #58585a; }
+    .text-mustard {color: #e7d434; }
+
+    /* bright */
+    .text-purple {color: #842f6d; }
+    .text-magenta {color: #f8305f; }
+    .text-cyan {color: #46c3d3; }
+    .text-yellow {color: #fcde32; }
+    .text-white {color: white; }
+
+    .title {
+      line-height: 1.1;
+    }
+    .title.giant {
+      /*font-size: calc(16px + 9vw);*/
+    }
+
+    .coral-background {
+      background-color: #A30854;
+      background-image: url(squiggle_bg.png);
+
+      color: 543643;
+    }
+
+    .grey {
+      background: #f3f3f5;
+      color: black;
+    }
+
+
+    .green-background {
+      background: #4CAF50 url(squiggle_bg.png);
+    }
+
+    .frame-title {
+      font-size: calc(16px + 1.8vw);
+      margin-bottom: 20px;
+      font-family: 'Montserrat', 'Roboto', sans-serif;
+    }
+
+    .text-og {
+      text-transform: none;
+    }
+
+    emoji-rain {
+      font-size: 40px;
+    }
+
+    .code-slide {
+      background: #2e4950;
+      background: #242424;
+    }
+    .code-snippet {
+      width: 100%;
+      padding: 20px;
+      font-size: calc(10px + 2vw);
+      overflow-x: auto;
+      text-transform: lowercase;
+      color: white;
+    }
+    .keyword    { color: #78a7f0; }
+    .attr       { color: #e76090; }
+    .value      { color: #55b88a; }
+    .faded      { color: #424242; }
+    .invisible  { visibility: hidden }
+    .opaque     { opacity: 0.5; }
+    .hilite     { background: rgba(255,255,255,0.2); border-radius: 3px;}
+    .active {
+      /*border-bottom: 3px solid white;
+      padding: 4px 0;*/
+    }
+    .horizontal {
+      display: flex;
+      flex-direction: row;
+    }
+
+  </style>
+</head>
+<body unresolved>
+  <a-presentation id="presentation">
+    <!-- <a-slide class="green-background">
+      <div class="title text-mustard">+ emoji</div>
+      <div class="title text-cyan">+ web components</div>
+    </a-slide> -->
+
+    <a-slide class="coral-background" style="line-height: 0.9">
+      <!--<img class="cheese" src="cheese.svg">-->
+      <div class="title text-mustard">+ emoji</div>
+      <div class="title text-cyan">+ web components</div>
+      <div class="title text-white">= art</div>
+    </a-slide>
+
+    <a-slide class="coral-background" align-center>
+      <!--<img class="cheese" src="cheese.svg">-->
+      <div class="guant title text-white">@notwaldorf</div>
+    </a-slide>
+
+    <a-slide class="coral-background" align-center>
+      <emoji-rain drops="400" active style="position:absolute; z-index:2; top:0" id="rain"></emoji-rain>
+      <!--<img class="cheese" src="cheese.svg">-->
+      <!-- <div class="title text-magenta" style="font-size:110px;">✨✨✨✨✨✨✨✨✨✨</div> -->
+      <div class="title text-white" style="font-size:110px;">✨✨e<span class="text-cyan">m</span>o<span class="text-mustard">j</span>i<span class="text-cyan">n</span>e<span class="text-mustard">e</span>r✨✨</div>
+      <!-- <div class="title text-magenta" style="font-size:110px;">✨✨✨✨✨✨✨✨✨✨</div> -->
+    </a-slide>
+
+    <a-slide class="code-slide" align-center>
+      <iframe xsrc="https://twitter.com/i/videos/tweet/760315448202190848" frameBorder="0"
+      onload="this.width=window.innerWidth-100;this.height=window.innerHeight-100;"></iframe>
+    </a-slide>
+
+    <a-slide class="coral-background" align-center>
+      <!--<img class="cheese" src="cheese.svg">-->
+      <div class="giant title text-white">right?</div>
+    </a-slide>
+
+    <a-slide class="theme-green" align-center>
+      <!--<img class="cheese" src="cheese.svg">-->
+      <div class="giant title text-white">back to the art</div>
+    </a-slide>
+
+    <a-slide class="theme-green" align-center>
+      <!--<img class="cheese" src="cheese.svg">-->
+      <div class="giant title text-white">art is hard</div>
+    </a-slide>
+
+    <a-slide class="grey" align-center>
+      <img src="http://totallyhistory.com/wp-content/uploads/2011/11/Bal-du-moulin-de-la-Galette.jpg"
+          onload="this.height=window.innerHeight - 100">
+    </a-slide>
+
+    <a-slide class="grey" align-center>
+      <img src="pizza1.png" onload="this.height=window.innerHeight">
+    </a-slide>
+
+    <a-slide class="grey" align-center>
+      <img src="pizza2.png" onload="this.height=window.innerHeight">
+    </a-slide>
+
+    <a-slide class="theme-green" align-center>
+      <!--<img class="cheese" src="cheese.svg">-->
+      <div class="giant title text-white">art is fun</div>
+    </a-slide>
+
+    <a-slide class="code-slide" align-center>
+      <div class="frame-title text-white">jenn schiffer: <span class="text-og">make8bitart.com</span></div>
+      <iframe xsrc="https://make8bitart.com/" frameBorder="0"
+      onload="this.width=window.innerWidth-100;this.height=window.innerHeight-100;"></iframe>
+    </a-slide>
+
+    <a-slide class="code-slide" align-center>
+      <div class="frame-title text-white">jenn schiffer: <span class="text-og">var t;</span></div>
+      <iframe xsrc="http://vart.institute/magritte/demo.html" frameBorder="0"
+      onload="this.width=window.innerWidth-100;this.height=window.innerHeight-100;"></iframe>
+    </a-slide>
+
+    <a-slide class="code-slide" align-center>
+      <div class="frame-title text-white">mu-an chiou: <span class="text-og">megamoji</span></div>
+      <iframe xsrc="http://megamoji.muan.co/" frameBorder="0"
+      onload="this.width=window.innerWidth-100;this.height=window.innerHeight-100;"></iframe>
+    </a-slide>
+
+    <a-slide class="theme-green" align-left>
+      <!--<img class="cheese" src="cheese.svg">-->
+      <div class="giant title text-white">give people better<br><span class="text-mustard">brushes</span></div>
+    </a-slide>
+
+    <a-slide class="theme-green" align-left>
+      <!--<img class="cheese" src="cheese.svg">-->
+      <div class="giant title text-white">give the web better<br><span class="text-mustard">brushes</span></div>
+    </a-slide>
+
+    <a-slide class="theme-green">
+      <!--<img class="cheese" src="cheese.svg">-->
+      <div class="horizontal">
+        <div style="width: 30vw" class="invisible">
+          <div class="pretitle text-white">&lt;header&gt;</div>
+          <div class="pretitle text-white">&lt;nav&gt;</div>
+          <div class="pretitle text-white">&lt;img&gt;</div>
+        </div>
+        <div class="title text-white">the web has<br><span class="text-mustard">semantics</span></div>
+      </div>
+    </a-slide>
+
+    <a-slide class="theme-green">
+      <!--<img class="cheese" src="cheese.svg">-->
+      <div class="horizontal">
+        <div style="width: 30vw">
+          <div class="pretitle text-white">&lt;header&gt;</div>
+          <div class="pretitle text-white">&lt;nav&gt;</div>
+          <div class="pretitle text-white">&lt;img&gt;</div>
+        </div>
+        <div class="title text-white">the web has<br><span class="text-mustard">semantics</span></div>
+      </div>
+    </a-slide>
+
+    <a-slide class="theme-green">
+      <!--<img class="cheese" src="cheese.svg">-->
+      <div class="horizontal">
+        <div style="width: 30vw" class="invisible">
+          <div class="pretitle text-white">&lt;input&gt;</div>
+          <div class="pretitle text-white">&lt;video&gt;</div>
+          <div class="pretitle text-white">&lt;summary&gt;</div>
+        </div>
+        <div class="title text-white">the web has<br><span class="text-mustard">encapsulation</span></div>
+      </div>
+    </a-slide>
+
+    <a-slide class="theme-green">
+      <!--<img class="cheese" src="cheese.svg">-->
+      <div class="horizontal">
+        <div style="width: 30vw">
+          <div class="pretitle text-white">&lt;input&gt;</div>
+          <div class="pretitle text-white">&lt;video&gt;</div>
+          <div class="pretitle text-white">&lt;summary&gt;</div>
+        </div>
+        <div class="title text-white">the web has<br><span class="text-mustard">encapsulation</span></div>
+      </div>
+    </a-slide>
+
+    <a-slide class="theme-green">
+      <!--<img class="cheese" src="cheese.svg">-->
+      <div class="horizontal">
+        <div style="width: 30vw">
+          <div class="pretitle text-white">&nbsp;</div>
+          <div class="pretitle text-white">lol no</div>
+          <div class="pretitle text-white">&nbsp;</div>
+        </div>
+        <div class="title text-white">the web has<br><span class="text-mustard">&lt;emoji-brush&gt;</span></div>
+      </div>
+    </a-slide>
+
+    <a-slide style="background:#242424;" align-center>
+      <img src="input1.png">
+    </a-slide>
+
+    <a-slide style="background:#242424;" align-center>
+      <img src="input2.png">
+    </a-slide>
+
+
+    <a-slide class="theme-green">
+      <!--<img class="cheese" src="cheese.svg">-->
+      <div class="title text-white">= web components</div>
+      <div class="title text-mustard">+ encapsulation</div>
+      <div class="title text-mustard">+ semantics</div>
+    </a-slide>
+
+    <a-slide class="code-slide" full-width>
+      <div class="code-snippet">
+        <pre>
+      <span class="keyword">&lt;a-presentation&gt;</span>
+        <span class="keyword">&lt;a-slide&gt;</span>
+          <span class="keyword">&lt;h1</span> <span class="attr">class=</span><span class="value">&quot;title&quot;</span><span class="keyword">&gt;</span>awesome.<span class="keyword">&lt;/h1&gt;</span>
+        <span class="keyword">&lt;/a-slide&gt;</span>
+      <span class="keyword">&lt;/a-presentation&gt;</span>
+        </pre>
+      </div>
+    </a-slide>
+
+    <a-slide class="code-slide" full-width>
+      <div class="code-snippet">
+        <pre>
+      <span class="keyword active">&lt;a-presentation&gt;</span>
+        <span class="faded">&lt;a-slide&gt;</span>
+          <span class="faded">&lt;h1</span> <span class="faded">class=</span><span class="faded">&quot;title&quot;</span><span class="faded">&gt;awesome.</span><span class="faded">&lt;/h1&gt;</span>
+        <span class="faded">&lt;/a-slide&gt;</span>
+      <span class="keyword">&lt;/a-presentation&gt;</span>
+        </pre>
+      </div>
+    </a-slide>
+
+    <a-slide class="theme-red" align-center>
+      <!--<img class="cheese" src="cheese.svg">-->
+      <div class="giant title text-white">ok so back to the art</div>
+    </a-slide>
+
+    <a-slide class="theme-red">
+      <!--<img class="cheese" src="cheese.svg">-->
+      <div class="title text-white">make <span class="text-yellow">art</span> with<br><span class="text-yellow">brushes</span></div>
+    </a-slide>
+
+    <a-slide class="theme-red">
+      <!--<img class="cheese" src="cheese.svg">-->
+      <div class="title text-white">make <span class="text-yellow">apps</span> with<br><span class="text-yellow">components</span></div>
+    </a-slide>
+
+    <a-slide class="code-slide" align-center>
+      <iframe xsrc="http://meowni.ca/emojillate" frameBorder="0"
+      onload="this.width=window.innerWidth-100;this.height=window.innerHeight-100;"></iframe>
+    </a-slide>
+
+    <a-slide class="code-slide" align-center>
+      <img src="emojillate1.png" onload="this.height=window.innerHeight-100;">
+    </a-slide>
+
+    <a-slide class="code-slide" align-center>
+      <img src="emojillate2.png" onload="this.height=window.innerHeight-100;">
+    </a-slide>
+
+    <a-slide class="code-slide" align-center>
+      <img src="emojillate3.png" onload="this.height=window.innerHeight-100;">
+    </a-slide>
+
+    <a-slide class="code-slide" align-center>
+      <img src="emojillate4.png" onload="this.height=window.innerHeight-100;">
+    </a-slide>
+
+    <a-slide class="code-slide" align-center>
+      <img src="emojillate5.png" onload="this.height=window.innerHeight-100;">
+    </a-slide>
+
+    <a-slide class="theme-red" align-center>
+      <div class="horizontal">
+        <div class="pretitle invisible" style="text-align:center; padding-right:2vw"><img src="file.svg" height="150"><br>input</div>
+        <div class="pretitle opaque invisible" style="padding:0;line-height:150px">⇢</div>
+        <div class="pretitle" style="text-align:center; padding:0"><img src="emojillator.svg" height="150"><br>emojillator</div>
+        <div class="pretitle invisible opaque" style="padding:0;line-height:150px">⇠</div>
+        <div class="pretitle invisible" style="text-align:center; padding-left:2vw"><img src="settings.svg" height="150"><br>config</div>
+      </div>
+    </a-slide>
+
+    <a-slide class="theme-red" align-center>
+      <div class="horizontal">
+        <div class="pretitle" style="text-align:center; padding-right:2vw"><img src="file.svg" height="150"><br>input</div>
+        <div class="pretitle opaque" style="padding:0;line-height:150px">⇢</div>
+        <div class="pretitle" style="text-align:center; padding:0"><img src="emojillator.svg" height="150"><br>emojillator</div>
+        <div class="pretitle invisible opaque" style="padding:0;line-height:150px">⇠</div>
+        <div class="pretitle invisible" style="text-align:center; padding-left:2vw"><img src="settings.svg" height="150"><br>config</div>
+      </div>
+    </a-slide>
+
+    <a-slide class="theme-red" align-center>
+      <div class="horizontal">
+        <div class="pretitle" style="text-align:center; padding-right:2vw"><img src="file.svg" height="150"><br>input</div>
+        <div class="pretitle opaque" style="padding:0;line-height:150px">⇢</div>
+        <div class="pretitle" style="text-align:center; padding:0"><img src="emojillator.svg" height="150"><br>emojillator</div>
+        <div class="pretitle opaque" style="padding:0;line-height:150px">⇠</div>
+        <div class="pretitle" style="text-align:center; padding-left:2vw"><img src="settings.svg" height="150"><br>config</div>
+      </div>
+    </a-slide>
+
+    <a-slide class="theme-red" align-center>
+      <div class="title text-white">data is bindable!</div>
+    </a-slide>
+
+    <a-slide class="code-slide" full-width>
+      <div class="code-snippet">
+        <pre>
+    <span class="invisible"><span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value">&quot;{{file}}&quot;</span><span class="keyword">&gt;</span></span>
+
+    <span class="keyword">&lt;emojillat-er&gt;</span>
+    <span class="keyword">&lt;/emojillat-er&gt;</span>
+
+    <span class="invisible"><span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span></span>
+        </pre>
+      </div>
+    </a-slide>
+
+    <a-slide class="code-slide" full-width>
+      <div class="code-snippet">
+        <pre>
+    <span class="invisible"><span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value">&quot;{{file}}&quot;</span><span class="keyword">&gt;</span></span>
+
+    <span class="keyword">&lt;emojillat-er</span>
+        <span class="attr">file=</span><span class="value">&quot;{{file}}&quot;</span>
+        <span class="attr">resolution=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span>
+    <span class="keyword">&lt;/emojillat-er&gt;</span>
+
+    <span class="invisible"><span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span></span>
+        </pre>
+      </div>
+    </a-slide>
+
+    <a-slide class="code-slide" full-width>
+      <div class="code-snippet">
+        <pre>
+    <span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value">&quot;{{file}}&quot;</span><span class="keyword">&gt;</span>
+
+    <span class="keyword">&lt;emojillat-er</span>
+        <span class="attr">file=</span><span class="value">&quot;{{file}}&quot;</span>
+        <span class="attr">resolution=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span>
+    <span class="keyword">&lt;/emojillat-er&gt;</span>
+
+    <span class="invisible"><span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span></span>
+        </pre>
+      </div>
+    </a-slide>
+
+
+    <a-slide class="code-slide" full-width>
+      <div class="code-snippet">
+        <pre>
+    <span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value hilite">&quot;{{file}}&quot;</span><span class="keyword">&gt;</span>
+
+    <span class="keyword">&lt;emojillat-er</span>
+        <span class="attr">file=</span><span class="value hilite">&quot;{{file}}&quot;</span>
+        <span class="attr">resolution=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span>
+    <span class="keyword">&lt;/emojillat-er&gt;</span>
+
+    <span class="invisible"><span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span></span>
+        </pre>
+      </div>
+    </a-slide>
+
+    <a-slide class="code-slide" full-width>
+      <div class="code-snippet">
+        <pre>
+    <span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value">&quot;{{file}}&quot;</span><span class="keyword">&gt;</span>
+
+    <span class="keyword">&lt;emojillat-er</span>
+        <span class="attr">file=</span><span class="value">&quot;{{file}}&quot;</span>
+        <span class="attr">resolution=</span><span class="value hilite">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span>
+    <span class="keyword">&lt;/emojillat-er&gt;</span>
+
+    <span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value hilite">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span>
+        </pre>
+      </div>
+    </a-slide>
+
+    <a-slide class="theme-yellow" align-center>
+      <!--<img class="cheese" src="cheese.svg">-->
+      <div class="giant title text-black">ok so back to the art</div>
+    </a-slide>
+
+    <a-slide class="theme-yellow">
+      <!--<img class="cheese" src="cheese.svg">-->
+      <div class="title text-black">= emojillator</div>
+      <div class="title text-white">+ pixellator</div>
+      <div class="title text-white">+ emoji</div>
+    </a-slide>
+
+    <a-slide class="theme-yellow">
+      <!--<img class="cheese" src="cheese.svg">-->
+      <div class="title text-white">canvas <span class="text-black">vs</span> css </div>
+    </a-slide>
+
+    <a-slide class="coral-background" align-center>
+      <!--<img class="cheese" src="cheese.svg">-->
+      <div class="giant title text-white">@notwaldorf <span style="font-weight:normal">✌︎</span></div>
+      <div class="giant pretitle text-white">thanks!</div>
+    </a-slide>
+
+  </a-presentation>
+
+  <!-- credit: pizza slice by Oliviu Stoian from the Noun Project -->
+  <!-- credit: Cheese by Oliviu Stoian from the Noun Project -->
+  <!-- PNG File by Oliviu Stoian from the Noun Project -->
+  <!-- pixels by Ismael Ruiz from the Noun Project -->
+  <!--Settings by Sergey Demushkin from the Noun Project
+
+Arrow Left by Juraj Sedlák from the Noun Project
+-->
+</body>
+<script>
+var cleared = false;
+presentation.addEventListener('current-slide-changed', function(event) {
+  if (cleared)
+    return;
+  var currentSlide = presentation.$.pages.selectedItem;
+  var rain = currentSlide.querySelector('emoji-rain');
+  if (rain) {
+    rain.stop();
+    currentSlide.removeChild(rain);
+    cleared = true;
+  }
+});
+</script>
+</html>

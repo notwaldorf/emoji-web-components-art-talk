@@ -1,0 +1,12 @@
+{
+  "name": "art-and-webcomponents",
+  "version": "0.0.1",
+  "description": "",
+  "authors": [
+    "Monica Dinculescu <noms@google.com>"
+  ],
+  "dependencies": {
+    "literally": "notwaldorf/literally",
+    "emoji-rain": "notwaldorf/emoji-rain"
+  }
+}
