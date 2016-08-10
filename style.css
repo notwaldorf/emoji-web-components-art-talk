@@ -1,0 +1,117 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  -webkit-overflow-scrolling: auto;
+  font-family: 'Fira Sans', 'Oswald', 'Montserrat', 'Roboto', sans-serif;
+}
+
+.title {
+  text-transform: lowercase;
+  line-height: 1.1;
+}
+
+.text-og {  /* Undo, sigh */
+  text-transform: none;
+}
+
+.title.giant {
+  font-size: calc(16px + 9vw);
+}
+
+pre {
+  font-family: 'Inconsolata', monospace;
+}
+
+.pizza {
+  position: absolute;
+  top: -10%;
+  left: 20%;
+  height: 200vh;
+  opacity: 0.05;
+}
+
+/* <img class="cheese" src="cheese.svg"> as a background */
+/*.cheese {
+  position: absolute;
+  top: -30%;
+  left: 20%;
+  height: 200vh;
+  opacity: 0.05;
+}*/
+
+/*****************************
+ * Text colours
+ *****************************/
+
+/* faded */
+.text-coral {color: #f49581; }
+.text-orange { color: #f5c795; }
+.text-green {color: #5fc4b4; }
+.text-black {color: #58585a; }
+.text-mustard {color: #e7d434; }
+
+/* bright */
+.text-purple {color: #842f6d; }
+.text-magenta {color: #f8305f; }
+.text-cyan {color: #46c3d3; }
+.text-yellow {color: #fcde32; }
+.text-white {color: white; }
+
+
+/*****************************
+ * Slide backgrounds
+ *****************************/
+.coral-background {
+  background-color: #A30854;
+  background-image: url(images/backgrounds/squiggle_bg.png);
+  color: white;
+}
+
+.dark-grey {
+  background: #242424;
+  color: white;
+}
+
+.grey {
+  background: #f3f3f5;
+  color: black;
+}
+
+/*****************************
+ * Iframes and elements
+ *****************************/
+
+emoji-rain {
+  font-size: 40px;
+}
+
+.frame-title {
+  font-size: calc(16px + 1.8vw);
+  margin-bottom: 20px;
+  font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+
+/*****************************
+ * Code
+ *****************************/
+.code-snippet {
+  width: 100%;
+  padding: 20px;
+  font-size: calc(10px + 2vw);
+  overflow-x: auto;
+  text-transform: lowercase;
+  color: white;
+}
+
+.keyword    { color: #78a7f0; }
+.attr       { color: #e76090; }
+.value      { color: #55b88a; }
+.faded      { color: #424242; }
+.invisible  { visibility: hidden }
+.opaque     { opacity: 0.5; }
+.hilite     { background: rgba(255,255,255,0.2); border-radius: 3px;}
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
