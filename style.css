@@ -76,6 +76,36 @@ pre {
   background-color: #A30854;
   background-image: url(images/backgrounds/squiggle_bg.png);
   color: white;
+  animation: animatedBackground 3s linear infinite;
+}
+
+@keyframes animatedBackground {
+  0% { background-position: 0 0; }
+  20% { background-position: 1vw 1vh; }
+  40% { background-position: 0vw 0vh; }
+  60% { background-position: -2vw 1vh; }
+  1000% { background-position: 0 0; }
+}
+@-moz-keyframes animatedBackground {
+  0% { background-position: 0 0; }
+  20% { background-position: 1vw 1vh; }
+  40% { background-position: 0vw 0vh; }
+  60% { background-position: -2vw 1vh; }
+  1000% { background-position: 0 0; }
+}
+@-webkit-keyframes animatedBackground {
+  0% { background-position: 0 0; }
+  20% { background-position: 1vw 1vh; }
+  40% { background-position: 0vw 0vh; }
+  60% { background-position: -2vw 1vh; }
+  1000% { background-position: 0 0; }
+}
+@-ms-keyframes animatedBackground {
+  0% { background-position: 0 0; }
+  20% { background-position: 1vw 1vh; }
+  40% { background-position: 0vw 0vh; }
+  60% { background-position: -2vw 1vh; }
+  1000% { background-position: 0 0; }
 }
 
 .dark-grey {
