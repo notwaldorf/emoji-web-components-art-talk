@@ -23,6 +23,12 @@ html, body {
   font-weight: bold !important;
 }
 
+.credits {
+  padding: 0 10vw;
+  padding-top: 90px;
+  opacity: 0.7;
+}
+
 pre {
   font-family: 'Inconsolata', monospace;
 }
