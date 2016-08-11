@@ -71,7 +71,8 @@
       <div class="title">art is hard</div>
     </a-slide>
 
-    <a-slide class="grey" align-center>
+    <a-slide class="dark-grey" align-center>
+      <div class="frame-title">Renoir: <span class="text-og">Bal du moulin de la Galette</span></div>
       <img src="http://totallyhistory.com/wp-content/uploads/2011/11/Bal-du-moulin-de-la-Galette.jpg"
           onload="fitImage(this)">
     </a-slide>
@@ -91,6 +92,7 @@
     <!--
     ~~~~ The web is really good at making these kind of tools  ~~~~
     -->
+
     <a-slide class="dark-grey" align-center>
       <div class="frame-title">jenn schiffer: <span class="text-og">make8bitart.com</span></div>
       <iframe xsrc="https://make8bitart.com/" frameBorder="0"
@@ -212,6 +214,246 @@
         </pre>
       </div>
     </a-slide>
+
+    <a-slide class="theme-red">
+      <div class="title">polymer 101</div>
+    </a-slide>
+
+    <!--
+    ~~~~ <a-slide> example  ~~~~
+    -->
+
+    <a-slide class="dark-grey" full-width>
+      <div class="code-snippet">
+        <pre>
+        <span class="keyword">&lt;dom-module</span> <span class="attr">id=</span><span class="value">&quot;a-slide&quot;</span><span class="keyword">&gt;</span>
+          <span class="keyword invisible">&lt;style&gt;...&lt;/style&gt;</span>
+
+          <span class="invisible"><span class="keyword">&lt;template&gt;</span>
+            <span class="keyword">&lt;div</span> <span class="attr">class=</span><span class="value">&quot;content-wrapper&quot;</span><span class="keyword">&gt;</span>
+              <span class="keyword">&lt;content</span> <span class="attr">select=</span><span class="value">&quot;.pretitle&quot;</span><span class="keyword">&gt;&lt;/content&gt;</span>
+              <span class="keyword">&lt;content</span> <span class="attr">select=</span><span class="value">&quot;.title&quot;</span><span class="keyword">&gt;&lt;/content&gt;</span>
+              <span class="keyword">&lt;content</span> <span class="attr">select=</span><span class="value">&quot;.subtitle&quot;</span><span class="keyword">&gt;&lt;/content&gt;</span>
+              <span class="keyword">&lt;content&gt;&lt;/content&gt;</span>
+            <span class="keyword">&lt;/div&gt;</span>
+          <span class="keyword">&lt;/template&gt;</span></span>
+
+          <span class="invisible"><span class="keyword">&lt;script&gt;</span>
+            <span class="attr text-og">Polymer</span><span>({</span>
+              <span class="attr">is</span><span class="keyword">:</span> <span class="value">&#39;a-slide&#39;</span>
+            <span>});</span>
+          <span class="keyword">&lt;/script&gt;</span></span>
+        <span class="keyword">&lt;/dom-module&gt;</span>
+    </pre></div>
+        </pre>
+      </div>
+    </a-slide>
+
+    <a-slide class="dark-grey" full-width>
+      <div class="code-snippet">
+        <pre>
+        <span class="keyword">&lt;dom-module</span> <span class="attr">id=</span><span class="value">&quot;a-slide&quot;</span><span class="keyword">&gt;</span>
+          <span class="keyword">&lt;style&gt;...&lt;/style&gt;</span>
+
+          <span class="invisible"><span class="keyword">&lt;template&gt;</span>
+            <span class="keyword">&lt;div</span> <span class="attr">class=</span><span class="value">&quot;content-wrapper&quot;</span><span class="keyword">&gt;</span>
+              <span class="keyword">&lt;content</span> <span class="attr">select=</span><span class="value">&quot;.pretitle&quot;</span><span class="keyword">&gt;&lt;/content&gt;</span>
+              <span class="keyword">&lt;content</span> <span class="attr">select=</span><span class="value">&quot;.title&quot;</span><span class="keyword">&gt;&lt;/content&gt;</span>
+              <span class="keyword">&lt;content</span> <span class="attr">select=</span><span class="value">&quot;.subtitle&quot;</span><span class="keyword">&gt;&lt;/content&gt;</span>
+              <span class="keyword">&lt;content&gt;&lt;/content&gt;</span>
+            <span class="keyword">&lt;/div&gt;</span>
+          <span class="keyword">&lt;/template&gt;</span></span>
+
+          <span class="invisible"><span class="keyword">&lt;script&gt;</span>
+            <span class="attr text-og">Polymer</span><span>({</span>
+              <span class="attr">is</span><span class="keyword">:</span> <span class="value">&#39;a-slide&#39;</span>
+            <span>});</span>
+          <span class="keyword">&lt;/script&gt;</span></span>
+        <span class="keyword">&lt;/dom-module&gt;</span>
+    </pre></div>
+        </pre>
+      </div>
+    </a-slide>
+
+    <a-slide class="dark-grey" full-width>
+      <div class="code-snippet">
+        <pre>
+        <span class="keyword">&lt;dom-module</span> <span class="attr">id=</span><span class="value">&quot;a-slide&quot;</span><span class="keyword">&gt;</span>
+          <span class="keyword">&lt;style&gt;...&lt;/style&gt;</span>
+
+          <span class="keyword">&lt;template&gt;</span>
+            <span class="keyword">&lt;div</span> <span class="attr">class=</span><span class="value">&quot;content-wrapper&quot;</span><span class="keyword">&gt;</span>
+              <span class="keyword">&lt;content</span> <span class="attr">select=</span><span class="value">&quot;.pretitle&quot;</span><span class="keyword">&gt;&lt;/content&gt;</span>
+              <span class="keyword">&lt;content</span> <span class="attr">select=</span><span class="value">&quot;.title&quot;</span><span class="keyword">&gt;&lt;/content&gt;</span>
+              <span class="keyword">&lt;content</span> <span class="attr">select=</span><span class="value">&quot;.subtitle&quot;</span><span class="keyword">&gt;&lt;/content&gt;</span>
+              <span class="keyword">&lt;content&gt;&lt;/content&gt;</span>
+            <span class="keyword">&lt;/div&gt;</span>
+          <span class="keyword">&lt;/template&gt;</span>
+
+          <span class="invisible"><span class="keyword">&lt;script&gt;</span>
+            <span class="attr text-og">Polymer</span><span>({</span>
+              <span class="attr">is</span><span class="keyword">:</span> <span class="value">&#39;a-slide&#39;</span>
+            <span>});</span>
+          <span class="keyword">&lt;/script&gt;</span></span>
+        <span class="keyword">&lt;/dom-module&gt;</span>
+    </pre></div>
+        </pre>
+      </div>
+    </a-slide>
+
+    <a-slide class="dark-grey" full-width>
+      <div class="code-snippet">
+        <pre>
+        <span class="keyword">&lt;dom-module</span> <span class="attr">id=</span><span class="value">&quot;a-slide&quot;</span><span class="keyword">&gt;</span>
+          <span class="keyword">&lt;style&gt;...&lt;/style&gt;</span>
+
+          <span class="keyword">&lt;template&gt;</span>
+            <span class="keyword">&lt;div</span> <span class="attr">class=</span><span class="value">&quot;content-wrapper&quot;</span><span class="keyword">&gt;</span>
+              <span class="keyword">&lt;content</span> <span class="attr">select=</span><span class="value">&quot;.pretitle&quot;</span><span class="keyword">&gt;&lt;/content&gt;</span>
+              <span class="keyword">&lt;content</span> <span class="attr">select=</span><span class="value">&quot;.title&quot;</span><span class="keyword">&gt;&lt;/content&gt;</span>
+              <span class="keyword">&lt;content</span> <span class="attr">select=</span><span class="value">&quot;.subtitle&quot;</span><span class="keyword">&gt;&lt;/content&gt;</span>
+              <span class="keyword">&lt;content&gt;&lt;/content&gt;</span>
+            <span class="keyword">&lt;/div&gt;</span>
+          <span class="keyword">&lt;/template&gt;</span>
+
+          <span class="keyword">&lt;script&gt;</span>
+            <span class="attr text-og">Polymer</span><span>({</span>
+              <span class="attr">is</span><span class="keyword">:</span> <span class="value">&#39;a-slide&#39;</span>
+            <span>});</span>
+          <span class="keyword">&lt;/script&gt;</span>
+        <span class="keyword">&lt;/dom-module&gt;</span>
+    </pre></div>
+        </pre>
+      </div>
+    </a-slide>
+
+
+    <a-slide class="dark-grey" full-width>
+      <div class="code-snippet">
+        <pre>
+        <span class="keyword">&lt;dom-module</span> <span class="attr">id=</span><span class="value">&quot;a-slide&quot;</span><span class="keyword">&gt;</span>
+          <span class="keyword">&lt;style&gt;...&lt;/style&gt;</span>
+
+          <span class="keyword">&lt;template&gt;</span>
+            <span class="keyword">&lt;div</span> <span class="attr">class=</span><span class="value">&quot;content-wrapper&quot;</span><span class="keyword">&gt;</span>
+              <span class="keyword">&lt;content</span> <span class="attr">select=</span><span class="value">&quot;.pretitle&quot;</span><span class="keyword">&gt;&lt;/content&gt;</span>
+              <span class="keyword">&lt;content</span> <span class="attr">select=</span><span class="value">&quot;.title&quot;</span><span class="keyword">&gt;&lt;/content&gt;</span>
+              <span class="keyword">&lt;content</span> <span class="attr">select=</span><span class="value">&quot;.subtitle&quot;</span><span class="keyword">&gt;&lt;/content&gt;</span>
+              <span class="keyword">&lt;content&gt;&lt;/content&gt;</span>
+            <span class="keyword">&lt;/div&gt;</span>
+          <span class="keyword">&lt;/template&gt;</span>
+
+          <span class="keyword">&lt;script&gt;</span>
+            <span class="attr text-og">Polymer</span><span>({</span>
+              <span class="attr">is</span><span class="keyword">:</span> <span class="value">&#39;a-slide&#39;</span>
+            <span>});</span>
+          <span class="keyword">&lt;/script&gt;</span>
+        <span class="keyword">&lt;/dom-module&gt;</span>
+    </pre></div>
+        </pre>
+      </div>
+    </a-slide>
+
+    <!--
+    ~~~~ <a-presentation> example  ~~~~
+    -->
+
+    <a-slide class="dark-grey" full-width>
+      <div class="code-snippet">
+        <pre>
+          <span class="keyword">&lt;script&gt;</span>
+            <span class="keyword text-og">Polymer</span><span>({</span>
+              <span class="keyword">is</span><span class="keyword">:</span> <span class="value">&#39;a-presentation&#39;</span><span>,</span>
+
+              <span class="invisible"><span class="keyword">properties</span><span class="keyword">:</span> <span>{</span>
+                <span class="attr text-og">currentSlide</span><span class="keyword">:</span> <span>{</span>
+                  <span class="keyword">type</span><span class="keyword">:</span> <span class="value text-og">Number,</span>
+                  <span class="keyword">value</span><span class="keyword">:</span> <span class="value">0</span><span>,</span>
+                  <span class="keyword">notify</span><span class="keyword">:</span> <span class="value">true</span>
+                <span>}</span>
+              <span>},</span></span>
+
+              <span class="invisible"><span class="keyword">attached</span><span class="keyword">:</span> <span class="value">function</span><span>()</span> <span>{...},</span></span>
+              <span class="invisible"><span class="keyword">next</span><span class="keyword">:</span> <span class="value">function</span><span>()</span> <span>{...},</span>
+              <span class="keyword">previous</span><span class="keyword">:</span> <span class="value">function</span><span>()</span> <span>{...}</span></span>
+            <span>});</span>
+          <span class="keyword">&lt;/script&gt;</span>
+        </pre>
+      </div>
+    </a-slide>
+
+    <a-slide class="dark-grey" full-width>
+      <div class="code-snippet">
+        <pre>
+          <span class="keyword">&lt;script&gt;</span>
+            <span class="keyword text-og">Polymer</span><span>({</span>
+              <span class="keyword">is</span><span class="keyword">:</span> <span class="value">&#39;a-presentation&#39;</span><span>,</span>
+
+              <span class="keyword">properties</span><span class="keyword">:</span> <span>{</span>
+                <span class="attr text-og">currentSlide</span><span class="keyword">:</span> <span>{</span>
+                  <span class="keyword">type</span><span class="keyword">:</span> <span class="value text-og">Number,</span>
+                  <span class="keyword">value</span><span class="keyword">:</span> <span class="value">0</span><span>,</span>
+                  <span class="keyword">notify</span><span class="keyword">:</span> <span class="value">true</span>
+                <span>}</span>
+              <span>},</span>
+
+              <span class="invisible"><span class="keyword">attached</span><span class="keyword">:</span> <span class="value">function</span><span>()</span> <span>{...},</span></span>
+              <span class="invisible"><span class="keyword">next</span><span class="keyword">:</span> <span class="value">function</span><span>()</span> <span>{...},</span>
+              <span class="keyword">previous</span><span class="keyword">:</span> <span class="value">function</span><span>()</span> <span>{...}</span></span>
+            <span>});</span>
+          <span class="keyword">&lt;/script&gt;</span>
+        </pre>
+      </div>
+    </a-slide>
+
+    <a-slide class="dark-grey" full-width>
+      <div class="code-snippet">
+        <pre>
+          <span class="keyword">&lt;script&gt;</span>
+            <span class="keyword text-og">Polymer</span><span>({</span>
+              <span class="keyword">is</span><span class="keyword">:</span> <span class="value">&#39;a-presentation&#39;</span><span>,</span>
+
+              <span class="keyword">properties</span><span class="keyword">:</span> <span>{</span>
+                <span class="attr text-og">currentSlide</span><span class="keyword">:</span> <span>{</span>
+                  <span class="keyword">type</span><span class="keyword">:</span> <span class="value text-og">Number,</span>
+                  <span class="keyword">value</span><span class="keyword">:</span> <span class="value">0</span><span>,</span>
+                  <span class="keyword">notify</span><span class="keyword">:</span> <span class="value">true</span>
+                <span>}</span>
+              <span>},</span>
+
+              <span class="keyword">attached</span><span class="keyword">:</span> <span class="value">function</span><span>()</span> <span>{...},</span>
+              <span class="invisible"><span class="keyword">next</span><span class="keyword">:</span> <span class="value">function</span><span>()</span> <span>{...},</span>
+              <span class="keyword">previous</span><span class="keyword">:</span> <span class="value">function</span><span>()</span> <span>{...}</span></span>
+            <span>});</span>
+          <span class="keyword">&lt;/script&gt;</span>
+        </pre>
+      </div>
+    </a-slide>
+
+    <a-slide class="dark-grey" full-width>
+      <div class="code-snippet">
+        <pre>
+          <span class="keyword">&lt;script&gt;</span>
+            <span class="keyword text-og">Polymer</span><span>({</span>
+              <span class="keyword">is</span><span class="keyword">:</span> <span class="value">&#39;a-presentation&#39;</span><span>,</span>
+
+              <span class="keyword">properties</span><span class="keyword">:</span> <span>{</span>
+                <span class="attr text-og">currentSlide</span><span class="keyword">:</span> <span>{</span>
+                  <span class="keyword">type</span><span class="keyword">:</span> <span class="value text-og">Number,</span>
+                  <span class="keyword">value</span><span class="keyword">:</span> <span class="value">0</span><span>,</span>
+                  <span class="keyword">notify</span><span class="keyword">:</span> <span class="value">true</span>
+                <span>}</span>
+              <span>},</span>
+
+              <span class="keyword">attached</span><span class="keyword">:</span> <span class="value">function</span><span>()</span> <span>{...},</span>
+              <span class="keyword">next</span><span class="keyword">:</span> <span class="value">function</span><span>()</span> <span>{...},</span>
+              <span class="keyword">previous</span><span class="keyword">:</span> <span class="value">function</span><span>()</span> <span>{...}</span>
+            <span>});</span>
+          <span class="keyword">&lt;/script&gt;</span>
+        </pre>
+      </div>
+    </a-slide>
+
 
 
     <a-slide class="theme-red" align-center>
