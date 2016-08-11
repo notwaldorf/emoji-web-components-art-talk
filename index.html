@@ -6,6 +6,17 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
   <title>👻</title>
 
+  <script>
+    function fitImage(img, delta) {
+      delta = delta || 100;
+      img.height = window.innerHeight - delta;
+    }
+    function fitIframe(iframe) {
+      iframe.width = window.innerWidth - 100;
+      iframe.height = window.innerHeight - 100;
+    }
+  </script>
+
   <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
   <link rel="import" href="bower_components/literally/a-presentation.html">
   <link rel="import" href="bower_components/literally/a-slide.html">
@@ -17,6 +28,7 @@
   <link href="style.css" rel="stylesheet">
 </head>
 <body unresolved>
+
   <a-presentation id="presentation">
 
     <!--
@@ -40,8 +52,8 @@
     </a-slide>
 
     <a-slide class="dark-grey" align-center>
-      <iframe src="https://twitter.com/i/videos/tweet/760315448202190848" frameBorder="0"
-      onload="this.width=window.innerWidth-100;this.height=window.innerHeight-100;"></iframe>
+      <iframe xsrc="https://twitter.com/i/videos/tweet/760315448202190848" frameBorder="0"
+      onload="fitIframe(this)"></iframe>
     </a-slide>
 
     <a-slide class="coral-background" align-center>
@@ -61,15 +73,15 @@
 
     <a-slide class="grey" align-center>
       <img src="http://totallyhistory.com/wp-content/uploads/2011/11/Bal-du-moulin-de-la-Galette.jpg"
-          onload="this.height=window.innerHeight - 100">
+          onload="fitImage(this)">
     </a-slide>
 
     <a-slide class="grey" align-center>
-      <img src="images/colour-by-numbers/pizza1.png" onload="this.height=window.innerHeight">
+      <img src="images/colour-by-numbers/pizza1.png" onload="fitImage(this,0)">
     </a-slide>
 
     <a-slide class="grey" align-center>
-      <img src="images/colour-by-numbers/pizza2.png" onload="this.height=window.innerHeight">
+      <img src="images/colour-by-numbers/pizza2.png" onload="fitImage(this,0)">
     </a-slide>
 
     <a-slide class="theme-green" align-center>
@@ -81,20 +93,20 @@
     -->
     <a-slide class="dark-grey" align-center>
       <div class="frame-title">jenn schiffer: <span class="text-og">make8bitart.com</span></div>
-      <iframe src="https://make8bitart.com/" frameBorder="0"
-      onload="this.width=window.innerWidth-100;this.height=window.innerHeight-100;"></iframe>
+      <iframe xsrc="https://make8bitart.com/" frameBorder="0"
+      onload="fitIframe(this)"></iframe>
     </a-slide>
 
     <a-slide class="dark-grey" align-center>
       <div class="frame-title">jenn schiffer: <span class="text-og">var t;</span></div>
-      <iframe src="http://vart.institute/magritte/demo.html" frameBorder="0"
-      onload="this.width=window.innerWidth-100;this.height=window.innerHeight-100;"></iframe>
+      <iframe xsrc="http://vart.institute/magritte/demo.html" frameBorder="0"
+      onload="fitIframe(this)"></iframe>
     </a-slide>
 
     <a-slide class="dark-grey" align-center>
       <div class="frame-title">mu-an chiou: <span class="text-og">megamoji</span></div>
-      <iframe src="http://megamoji.muan.co/" frameBorder="0"
-      onload="this.width=window.innerWidth-100;this.height=window.innerHeight-100;"></iframe>
+      <iframe xsrc="http://megamoji.muan.co/" frameBorder="0"
+      onload="fitIframe(this)"></iframe>
     </a-slide>
 
     <a-slide class="theme-green" align-left>
@@ -219,28 +231,28 @@
     -->
 
     <a-slide class="dark-grey" align-center>
-      <iframe src="http://meowni.ca/emojillate" frameBorder="0"
-      onload="this.width=window.innerWidth-100;this.height=window.innerHeight-100;"></iframe>
+      <iframe xsrc="http://meowni.ca/emojillate" frameBorder="0"
+      onload="fitIframe(this)"></iframe>
     </a-slide>
 
     <a-slide class="dark-grey" align-center>
-      <img src="images/app-sections/emojillate1.png" onload="this.height=window.innerHeight-100;">
+      <img src="images/app-sections/emojillate1.png" onload="fitImage(this)">
     </a-slide>
 
     <a-slide class="dark-grey" align-center>
-      <img src="images/app-sections/emojillate2.png" onload="this.height=window.innerHeight-100;">
+      <img src="images/app-sections/emojillate2.png" onload="fitImage(this)">
     </a-slide>
 
     <a-slide class="dark-grey" align-center>
-      <img src="images/app-sections/emojillate3.png" onload="this.height=window.innerHeight-100;">
+      <img src="images/app-sections/emojillate3.png" onload="fitImage(this)">
     </a-slide>
 
     <a-slide class="dark-grey" align-center>
-      <img src="images/app-sections/emojillate4.png" onload="this.height=window.innerHeight-100;">
+      <img src="images/app-sections/emojillate4.png" onload="fitImage(this)">
     </a-slide>
 
     <a-slide class="dark-grey" align-center>
-      <img src="images/app-sections/emojillate5.png" onload="this.height=window.innerHeight-100;">
+      <img src="images/app-sections/emojillate5.png" onload="fitImage(this)">
     </a-slide>
 
     <!--
@@ -286,8 +298,8 @@
         <pre>
     <span class="invisible"><span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value">&quot;{{file}}&quot;</span><span class="keyword">&gt;</span></span>
 
-    <span class="keyword">&lt;emojillat-er&gt;</span>
-    <span class="keyword">&lt;/emojillat-er&gt;</span>
+    <span class="keyword">&lt;emoji-llate&gt;</span>
+    <span class="keyword">&lt;/emoji-llate&gt;</span>
 
     <span class="invisible"><span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span></span>
         </pre>
@@ -299,10 +311,10 @@
         <pre>
     <span class="invisible"><span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value">&quot;{{file}}&quot;</span><span class="keyword">&gt;</span></span>
 
-    <span class="keyword">&lt;emojillat-er</span>
+    <span class="keyword">&lt;emoji-llate</span>
         <span class="attr">file=</span><span class="value">&quot;{{file}}&quot;</span>
         <span class="attr">resolution=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span>
-    <span class="keyword">&lt;/emojillat-er&gt;</span>
+    <span class="keyword">&lt;/emoji-llate&gt;</span>
 
     <span class="invisible"><span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span></span>
         </pre>
@@ -314,10 +326,10 @@
         <pre>
     <span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value">&quot;{{file}}&quot;</span><span class="keyword">&gt;</span>
 
-    <span class="keyword">&lt;emojillat-er</span>
+    <span class="keyword">&lt;emoji-llate</span>
         <span class="attr">file=</span><span class="value">&quot;{{file}}&quot;</span>
         <span class="attr">resolution=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span>
-    <span class="keyword">&lt;/emojillat-er&gt;</span>
+    <span class="keyword">&lt;/emoji-llate&gt;</span>
 
     <span class="invisible"><span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span></span>
         </pre>
@@ -329,10 +341,10 @@
         <pre>
     <span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value hilite">&quot;{{file}}&quot;</span><span class="keyword">&gt;</span>
 
-    <span class="keyword">&lt;emojillat-er</span>
+    <span class="keyword">&lt;emoji-llate</span>
         <span class="attr">file=</span><span class="value hilite">&quot;{{file}}&quot;</span>
         <span class="attr">resolution=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span>
-    <span class="keyword">&lt;/emojillat-er&gt;</span>
+    <span class="keyword">&lt;/emoji-llate&gt;</span>
 
     <span class="invisible"><span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span></span>
         </pre>
@@ -344,10 +356,10 @@
         <pre>
     <span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value">&quot;{{file}}&quot;</span><span class="keyword">&gt;</span>
 
-    <span class="keyword">&lt;emojillat-er</span>
+    <span class="keyword">&lt;emoji-llate</span>
         <span class="attr">file=</span><span class="value">&quot;{{file}}&quot;</span>
         <span class="attr">resolution=</span><span class="value hilite">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span>
-    <span class="keyword">&lt;/emojillat-er&gt;</span>
+    <span class="keyword">&lt;/emoji-llate&gt;</span>
 
     <span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value hilite">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span>
         </pre>
@@ -364,10 +376,90 @@
       <div class="title">+ emoji</div>
     </a-slide>
 
+    <!--
+    ~~~~ How to pixellate, a story  ~~~~
+    -->
+
     <a-slide class="theme-yellow">
-      <div class="title">canvas <span class="text-black">vs</span> css </div>
+      <div class="title">canvas <span class="text-black">vs</span> divs </div>
     </a-slide>
 
+    <a-slide class="theme-yellow">
+      <div class="title">divs are copy pastable</div>
+    </a-slide>
+
+    <a-slide class="theme-yellow" align-center>
+      <img src="images/voltron.png" onload="fitImage(this)">
+    </a-slide>
+
+    <a-slide class="theme-yellow" align-center>
+      <b><div class="title">👍🏻</div></b>
+    </a-slide>
+
+    <a-slide class="theme-yellow">
+      <div class="title">how 2 emojillate</div>
+    </a-slide>
+
+    <a-slide class="theme-yellow" align-center>
+      <div class="image-title">1. the image</div>
+      <img src="images/pixellating/load.png" onload="fitImage(this, 200)">
+    </a-slide>
+    <a-slide class="theme-yellow" align-center>
+      <div class="image-title">2. find the ratio</div>
+      <img src="images/pixellating/image-size.png" onload="fitImage(this, 200)">
+    </a-slide>
+    <a-slide class="theme-yellow" align-center>
+      <div class="image-title">3. resize our canvas</div>
+      <img src="images/pixellating/canvas.png" onload="fitImage(this, 200)">
+    </a-slide>
+    <a-slide class="theme-yellow" align-center>
+      <div class="image-title">4. pixellate it!</div>
+      <!--Draw the image super tiny and then scale it from the tiny size to
+      the actual canvas size, which pixellates it.-->
+      <img src="images/pixellating/pixellate.png" onload="fitImage(this, 200)">
+    </a-slide>
+    <a-slide class="theme-yellow" align-center>
+      <div class="image-title">5. make divs from pixels</div>
+      <img src="images/pixellating/add-emoji.png" onload="fitImage(this, 200)">
+    </a-slide>
+    <a-slide class="theme-yellow" align-center>
+      <div class="image-title">6. emojillated!</div>
+      <img src="images/pixellating/done.png" onload="fitImage(this, 200)">
+    </a-slide>
+    <a-slide class="theme-yellow" align-center>
+      <div class="image-title">p.s. it's text!!</div>
+      <img src="images/pixellating/selection.png" onload="fitImage(this, 200)">
+    </a-slide>
+    <a-slide class="theme-yellow" align-center>
+      <div class="image-title">so we can make a gist</div>
+      <p style="font-size:12px; background-color:#fce056;">
+  👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👪🚚😹👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸👸👸👸👸👸🙌🐥🚧🍶🌔🍶🚧🐥🐥👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸👸👸👸👸😹😹📈🌁⬜⬜⬜⬜🌁🚓📣👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸🌕🌛🐥🐥🐥🐥🐥🐥🐥👸👸👸👸👸👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸👸👸👸🙈⛅⬜⬜⬜⬜⬜⬜⬜⬜⬜📜🚚👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸🙌👢🚚😤😤😤😤😤😤🌕👑🐥👸👸👸👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸👸👸🚚🔳⬜⬜⬜⬜⬜⬜⬜👸⬜⬜⬜⬜🚚👸👸👸👸👸👸👸👸👸👸👸👸👸😢🙌😤⬜⬜⬜⬜⬜⬜⬜⬜👸🐺💂👸👸👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸👸😥🙌⬜⬜⬜⬜⬜⬜⬜⬜👸👸⬜⬜⬜🔏🐺👸👸👸👸👸👸👸👸👸👸👸😢🙌👸⬜⬜⬜⬜⬜⬜⬜⬜⬜👸👸📣💇👸👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸👸🌛📜⬜⬜⬜⬜⬜👸⬜⬜⬜⬜⬜⬜⬜⬜🔊😤👸👸👸👸👸👸👸👸👸👪🐴😤⬜⬜⬜👸👸👸👸👸👸👸👸👸👸👑👪👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸😓🚧⬜⬜👸⬜⬜⬜⬜⬜⬜⬜⬜⬜👸⬜⬜👟😤👸👸👸👸👸👸👸👸😥💂🚚⬜⬜⬜👸👸👸👸👸👸👸👸👸👸👸🌛📣👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸🌛😹⬜⬜👸⬜⬜⬜⬜⬜⬜⬜⬜👸👸👸⬜📠👑👸👸👸👸👸👸👸👸🌛👑👸⬜⬜👸👸👸👸👸👸👸👸👸👸👸👸👸😤🚚👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸🌛🌕⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜🚧😤👸👸👸👸👸👸👸🌛📣👸⬜⬜👸👸👸👸👸👸👸👸👸👸👸👸😥🌛🚚👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸🌛🌕⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜📜🚧👪👸👸👸👸👸👸👸👸📣😹👸👸👸👸👸👸👸👸👸👸👸👸👸👸🌛🐻👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸🌛🚚⬜⬜👸👸👸⬜⬜⬜⬜⬜⬜👸👸👸⬜🍨😹👸👸👸👸👸👸👸👸👸👸🍶👪👸👸👸👸👸👸👸👸👸👸👸👸😓🐎😤👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸👸🌛⬜⬜👸👸⬜⬜⬜⬜⬜⬜⬜⬜👸⬜⬜👟😤👸👸👸👸👸👸👸👸👸👸🌛📣👸👸👸👸👸👸👸👸👸👸👸👸🌛🐻👸👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸👸🌛📜⬜⬜⬜⬜⬜👸⬜⬜👸⬜⬜⬜⬜⬜🙏😤👸👸👸👸👸👸👸👸👸👸👸📣📣👸👸👸👸👸👸👸👸👸😥🌛🙌👸👸👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸👸👸🚚⬜⬜⬜⬜👸👸⬜⬜👸👸⬜⬜⬜⛅😹👸👸👸👸👸👸👸👸👸👸👸👸👸😥👑🌛🐻😤👸👸😓🐻🌛🐎👋👸👸👸👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸👸👸🌛🔍⬜⬜⬜👸👸⬜⬜👸👸⬜⬜🎂😹👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸😓😹🍦⭐🚧⭐🙌😓😓👸👸👸👸👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸👸👸👸📣🔊⬜⬜⬜⬜⬜⬜⬜⬜⬜🎂👳👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👪😓😥🈚👸👸👸👸👸👸👸👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸👸👸👸👸😓🚚🔏🍚⬜⬜⬜🎂📱📢😹👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸👸👸👸👸👸👸😥🍶🍦🌛🌛🍦😹😥👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸😓😥😥👪👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸<br>
+👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸👸<br>
+      </p>
+    </a-slide>
 
     <!--
     ~~~~ okbye  ~~~~
@@ -390,15 +482,19 @@
 
 <script>
 var cleared = false;
+
 presentation.addEventListener('current-slide-changed', function(event) {
   if (cleared)
     return;
 
   var currentSlide = presentation.$.pages.selectedItem;
+  if (!currentSlide)
+    return;
+
   var rain = currentSlide.querySelector('emoji-rain');
   if (rain) {
     rain.stop();
-    currentSlide.removeChild(rain);
+    rain.parentNode.removeChild(rain);
     cleared = true;
   }
 });
