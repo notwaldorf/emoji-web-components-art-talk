@@ -117,6 +117,10 @@ emoji-rain {
   text-transform: lowercase;
   color: white;
 }
+.code-snippet.smaller {
+  font-size: calc(10px + 1.5vw);
+}
+
 
 .keyword    { color: #78a7f0; }
 .attr       { color: #e76090; }
