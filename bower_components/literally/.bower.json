@@ -15,7 +15,6 @@
     "url": "git://github.com/notwaldorf/literally.git"
   },
   "main": "index.html",
-  "license": "http://polymer.github.io/LICENSE.txt",
   "homepage": "https://github.com/notwaldorf/literally",
   "ignore": [
     "bower_components",
@@ -30,11 +29,11 @@
   "devDependencies": {
     "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
   },
-  "_release": "06ae7e4587",
+  "_release": "5873f1fb85",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "06ae7e45875d5e4988ff0c25ff54d019ed406284"
+    "commit": "5873f1fb85b52acc06567c0a38ba11f3979873b0"
   },
   "_source": "git://github.com/notwaldorf/literally.git",
   "_target": "*",
