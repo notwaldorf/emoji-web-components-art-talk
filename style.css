@@ -136,6 +136,10 @@ emoji-rain {
   font-weight: bold;
 }
 
+iframe, img {
+  max-width: 90vw;
+}
+
 /*****************************
  * Code
  *****************************/
@@ -147,10 +151,14 @@ emoji-rain {
   text-transform: lowercase;
   color: white;
 }
+
 .code-snippet.smaller {
   font-size: calc(10px + 1.5vw);
 }
 
+.code-snippet.bigger {
+  font-size: calc(10px + 3vw);
+}
 
 .keyword    { color: #78a7f0; }
 .attr       { color: #e76090; }

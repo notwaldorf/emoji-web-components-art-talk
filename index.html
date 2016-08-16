@@ -222,7 +222,7 @@
     </a-slide>
 
     <a-slide class="dark-grey" full-width>
-      <div class="code-snippet">
+      <div class="code-snippet bigger">
         <pre>
       <span class="keyword">&lt;a-presentation&gt;</span>
         <span class="keyword">&lt;a-slide&gt;</span>
@@ -234,7 +234,7 @@
     </a-slide>
 
     <a-slide class="dark-grey" full-width>
-      <div class="code-snippet">
+      <div class="code-snippet bigger">
         <pre>
       <span class="keyword">&lt;a-presentation&gt;</span>
         <span class="faded">&lt;a-slide&gt;</span>
@@ -496,7 +496,7 @@
       <div class="horizontal">
         <div class="pretitle invisible" style="text-align:center; padding-right:2vw"><img src="images/app-diagram/file.svg" height="150"><br>input</div>
         <div class="pretitle opaque invisible" style="padding:0;line-height:150px">⇢</div>
-        <div class="pretitle" style="text-align:center; padding:0"><img src="images/app-diagram/emojillator.svg" height="150"><br>emojillator</div>
+        <div class="pretitle" style="text-align:center; padding:0"><img src="images/app-diagram/emojillator.svg" height="150"><br>&lt;emoji-llate&gt;</div>
         <div class="pretitle invisible opaque" style="padding:0;line-height:150px">⇠</div>
         <div class="pretitle invisible" style="text-align:center; padding-left:2vw"><img src="images/app-diagram/settings.svg" height="150"><br>config</div>
       </div>
@@ -506,7 +506,7 @@
       <div class="horizontal">
         <div class="pretitle" style="text-align:center; padding-right:2vw"><img src="images/app-diagram/file.svg" height="150"><br>input</div>
         <div class="pretitle opaque" style="padding:0;line-height:150px">⇢</div>
-        <div class="pretitle" style="text-align:center; padding:0"><img src="images/app-diagram/emojillator.svg" height="150"><br>emojillator</div>
+        <div class="pretitle" style="text-align:center; padding:0"><img src="images/app-diagram/emojillator.svg" height="150"><br>&lt;emoji-llate&gt;</div>
         <div class="pretitle invisible opaque" style="padding:0;line-height:150px">⇠</div>
         <div class="pretitle invisible" style="text-align:center; padding-left:2vw"><img src="images/app-diagram/settings.svg" height="150"><br>config</div>
       </div>
@@ -516,7 +516,7 @@
       <div class="horizontal">
         <div class="pretitle" style="text-align:center; padding-right:2vw"><img src="images/app-diagram/file.svg" height="150"><br>input</div>
         <div class="pretitle opaque" style="padding:0;line-height:150px">⇢</div>
-        <div class="pretitle" style="text-align:center; padding:0"><img src="images/app-diagram/emojillator.svg" height="150"><br>emojillator</div>
+        <div class="pretitle" style="text-align:center; padding:0"><img src="images/app-diagram/emojillator.svg" height="150"><br>&lt;emoji-llate&gt;</div>
         <div class="pretitle opaque" style="padding:0;line-height:150px">⇠</div>
         <div class="pretitle" style="text-align:center; padding-left:2vw"><img src="images/app-diagram/settings.svg" height="150"><br>config</div>
       </div>
@@ -599,6 +599,23 @@
       </div>
     </a-slide>
 
+    <a-slide class="dark-grey" full-width>
+      <div class="code-snippet">
+        <pre>
+    <span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value">&quot;{{file}}&quot;</span><span class="keyword">&gt;</span>
+
+    <span class="keyword">&lt;emoji-llate</span>
+        <span class="attr">file=</span><span class="value">&quot;{{file}}&quot;</span>
+        <span class="attr">resolution=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span>
+        <span class="attr">hide-background=</span><span class="value hilite text-og">&quot;{{shouldHide}}&quot;</span><span class="keyword">&gt;</span>
+    <span class="keyword">&lt;/emoji-llate&gt;</span>
+
+    <span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span>
+    <span class="keyword">&lt;paper-checkbox</span> <span class="attr">checked=</span><span class="value hilite text-og">&quot;{{shouldHide}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-checkbox&gt;</span>
+        </pre>
+      </div>
+    </a-slide>
+
     <a-slide class="theme-yellow" align-center>
       <div class="title text-white">ok so back to the art</div>
     </a-slide>
@@ -627,7 +644,7 @@
     </a-slide>
 
     <a-slide class="theme-yellow" align-center>
-      <b><div class="title">👍🏻</div></b>
+      <b><div class="title">👌</div></b>
     </a-slide>
 
     <a-slide class="theme-yellow">
@@ -651,6 +668,22 @@
       <!--Draw the image super tiny and then scale it from the tiny size to
       the actual canvas size, which pixellates it.-->
       <img src="images/pixellating/pixellate.png" onload="fitImage(this, 200)">
+    </a-slide>
+    <a-slide class="theme-yellow" align-center>
+      <div class="image-title">4. pixellate it! (still hidden)</div>
+      <img src="images/pixellating/pixellate_2.png" onload="fitImage(this, 200)">
+    </a-slide>
+    <a-slide class="theme-yellow" align-center>
+      <div class="image-title">4. pixellate it! (still hidden)</div>
+      <img src="images/pixellating/pixellate_3.png" onload="fitImage(this, 200)">
+    </a-slide>
+    <a-slide class="theme-yellow" align-center>
+      <div class="image-title">4. pixellate it! (still hidden)</div>
+      <img src="images/pixellating/pixellate_4.png" onload="fitImage(this, 200)">
+    </a-slide>
+    <a-slide class="theme-yellow" align-center>
+      <div class="image-title">4. pixellate it! (still hidden)</div>
+      <img src="images/pixellating/pixellate_5.png" onload="fitImage(this, 200)">
     </a-slide>
     <a-slide class="theme-yellow" align-center>
       <div class="image-title">5. add pixel &lt;divs&gt; somewhere visible</div>
