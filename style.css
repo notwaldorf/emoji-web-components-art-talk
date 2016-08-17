@@ -152,6 +152,15 @@ iframe, img {
   color: white;
 }
 
+.code-snippet pre::selection, .code-snippet span::selection {
+  background-color: #fde100;
+  color: black;
+}
+
+.code-snippet::-moz-selection {
+  background-color: rgba(255,255,255,0.5);
+}
+
 .code-snippet.smaller {
   font-size: calc(10px + 1.5vw);
 }

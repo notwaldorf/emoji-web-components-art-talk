@@ -226,23 +226,15 @@
         <pre>
       <span class="keyword">&lt;a-presentation&gt;</span>
         <span class="keyword">&lt;a-slide&gt;</span>
-          <span class="keyword">&lt;h1</span> <span class="attr">class=</span><span class="value">&quot;title&quot;</span><span class="keyword">&gt;</span>awesome.<span class="keyword">&lt;/h1&gt;</span>
+          <span class="keyword">&lt;h1</span> <span class="attr">class=</span><span class="value">&quot;title&quot;</span><span class="keyword">&gt;</span>awesome!<span class="keyword">&lt;/h1&gt;</span>
         <span class="keyword">&lt;/a-slide&gt;</span>
       <span class="keyword">&lt;/a-presentation&gt;</span>
         </pre>
       </div>
     </a-slide>
 
-    <a-slide class="dark-grey" full-width>
-      <div class="code-snippet bigger">
-        <pre>
-      <span class="keyword">&lt;a-presentation&gt;</span>
-        <span class="faded">&lt;a-slide&gt;</span>
-          <span class="faded">&lt;h1</span> <span class="faded">class=</span><span class="faded">&quot;title&quot;</span><span class="faded">&gt;awesome.</span><span class="faded">&lt;/h1&gt;</span>
-        <span class="faded">&lt;/a-slide&gt;</span>
-      <span class="keyword">&lt;/a-presentation&gt;</span>
-        </pre>
-      </div>
+    <a-slide>
+      <h1 class="title">awesome!</h1>
     </a-slide>
 
     <a-slide class="theme-red">
@@ -529,12 +521,12 @@
     <a-slide class="dark-grey" full-width>
       <div class="code-snippet">
         <pre>
-    <span class="invisible"><span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value">&quot;{{file}}&quot;</span><span class="keyword">&gt;</span></span>
+    <span class="invisible"><span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value text-og">&quot;{{someFile}}&quot;</span><span class="keyword">&gt;</span></span>
 
     <span class="keyword">&lt;emoji-llate&gt;</span>
     <span class="keyword">&lt;/emoji-llate&gt;</span>
 
-    <span class="invisible"><span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span></span>
+    <span class="invisible"><span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value text-og">&quot;{{someResolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span></span>
         </pre>
       </div>
     </a-slide>
@@ -542,14 +534,14 @@
     <a-slide class="dark-grey" full-width>
       <div class="code-snippet">
         <pre>
-    <span class="invisible"><span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value">&quot;{{file}}&quot;</span><span class="keyword">&gt;</span></span>
+    <span class="invisible"><span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value text-og">&quot;{{someFile}}&quot;</span><span class="keyword">&gt;</span></span>
 
     <span class="keyword">&lt;emoji-llate</span>
-        <span class="attr">file=</span><span class="value">&quot;{{file}}&quot;</span>
-        <span class="attr">resolution=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span>
+        <span class="attr">file</span><span class="value invisible text-og">&quot;{{someFile}}&quot;</span>
+        <span class="attr">resolution</span><span class="value invisible text-og">&quot;{{someResolution}}&quot;</span><span class="keyword invisible">&gt;</span>
     <span class="keyword">&lt;/emoji-llate&gt;</span>
 
-    <span class="invisible"><span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span></span>
+    <span class="invisible"><span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value text-og">&quot;{{someResolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span></span>
         </pre>
       </div>
     </a-slide>
@@ -557,14 +549,14 @@
     <a-slide class="dark-grey" full-width>
       <div class="code-snippet">
         <pre>
-    <span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value">&quot;{{file}}&quot;</span><span class="keyword">&gt;</span>
+    <span class="invisible"><span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value text-og">&quot;{{someFile}}&quot;</span><span class="keyword">&gt;</span></span>
 
     <span class="keyword">&lt;emoji-llate</span>
-        <span class="attr">file=</span><span class="value">&quot;{{file}}&quot;</span>
-        <span class="attr">resolution=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span>
+        <span class="attr">file=</span><span class="value text-og">&quot;{{someFile}}&quot;</span>
+        <span class="attr">resolution=</span><span class="value text-og">&quot;{{someResolution}}&quot;</span><span class="keyword">&gt;</span>
     <span class="keyword">&lt;/emoji-llate&gt;</span>
 
-    <span class="invisible"><span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span></span>
+    <span class="invisible"><span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value text-og">&quot;{{someResolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span></span>
         </pre>
       </div>
     </a-slide>
@@ -572,14 +564,14 @@
     <a-slide class="dark-grey" full-width>
       <div class="code-snippet">
         <pre>
-    <span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value hilite">&quot;{{file}}&quot;</span><span class="keyword">&gt;</span>
+    <span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value text-og">&quot;{{someFile}}&quot;</span><span class="keyword">&gt;</span>
 
     <span class="keyword">&lt;emoji-llate</span>
-        <span class="attr">file=</span><span class="value hilite">&quot;{{file}}&quot;</span>
-        <span class="attr">resolution=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span>
+        <span class="attr">file=</span><span class="value text-og">&quot;{{someFile}}&quot;</span>
+        <span class="attr">resolution=</span><span class="value text-og">&quot;{{someResolution}}&quot;</span><span class="keyword">&gt;</span>
     <span class="keyword">&lt;/emoji-llate&gt;</span>
 
-    <span class="invisible"><span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span></span>
+    <span class="invisible"><span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value text-og">&quot;{{someResolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span></span>
         </pre>
       </div>
     </a-slide>
@@ -587,14 +579,14 @@
     <a-slide class="dark-grey" full-width>
       <div class="code-snippet">
         <pre>
-    <span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value">&quot;{{file}}&quot;</span><span class="keyword">&gt;</span>
+    <span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value hilite text-og">&quot;{{someFile}}&quot;</span><span class="keyword">&gt;</span>
 
     <span class="keyword">&lt;emoji-llate</span>
-        <span class="attr">file=</span><span class="value">&quot;{{file}}&quot;</span>
-        <span class="attr">resolution=</span><span class="value hilite">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span>
+        <span class="attr">file=</span><span class="value hilite text-og">&quot;{{someFile}}&quot;</span>
+        <span class="attr">resolution=</span><span class="value text-og">&quot;{{someResolution}}&quot;</span><span class="keyword">&gt;</span>
     <span class="keyword">&lt;/emoji-llate&gt;</span>
 
-    <span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value hilite">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span>
+    <span class="invisible"><span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value text-og">&quot;{{someResolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span></span>
         </pre>
       </div>
     </a-slide>
@@ -602,16 +594,66 @@
     <a-slide class="dark-grey" full-width>
       <div class="code-snippet">
         <pre>
-    <span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value">&quot;{{file}}&quot;</span><span class="keyword">&gt;</span>
+    <span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value text-og">&quot;{{someFile}}&quot;</span><span class="keyword">&gt;</span>
 
     <span class="keyword">&lt;emoji-llate</span>
-        <span class="attr">file=</span><span class="value">&quot;{{file}}&quot;</span>
-        <span class="attr">resolution=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span>
+        <span class="attr">file=</span><span class="value text-og">&quot;{{someFile}}&quot;</span>
+        <span class="attr">resolution=</span><span class="value hilite text-og">&quot;{{someResolution}}&quot;</span><span class="keyword">&gt;</span>
+    <span class="keyword">&lt;/emoji-llate&gt;</span>
+
+    <span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value hilite text-og">&quot;{{someResolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span>
+        </pre>
+      </div>
+    </a-slide>
+
+    <a-slide class="dark-grey" full-width>
+      <div class="code-snippet">
+        <pre>
+    <span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">value=</span><span class="value text-og">&quot;{{someFile}}&quot;</span><span class="keyword">&gt;</span>
+
+    <span class="keyword">&lt;emoji-llate</span>
+        <span class="attr">file=</span><span class="value text-og">&quot;{{someFile}}&quot;</span>
+        <span class="attr">resolution=</span><span class="value text-og">&quot;{{someResolution}}&quot;</span><span class="keyword">&gt;</span>
         <span class="attr">hide-background=</span><span class="value hilite text-og">&quot;{{shouldHide}}&quot;</span><span class="keyword">&gt;</span>
     <span class="keyword">&lt;/emoji-llate&gt;</span>
 
-    <span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value">&quot;{{resolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span>
+    <span class="keyword">&lt;paper-slider</span> <span class="attr">value=</span><span class="value text-og">&quot;{{someResolution}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-slider&gt;</span>
     <span class="keyword">&lt;paper-checkbox</span> <span class="attr">checked=</span><span class="value hilite text-og">&quot;{{shouldHide}}&quot;</span><span class="keyword">&gt;</span><span class="keyword">&lt;/paper-checkbox&gt;</span>
+        </pre>
+      </div>
+    </a-slide>
+
+    <a-slide class="dark-grey" full-width>
+      <div class="code-snippet" style="font-size: calc(10px + 1vw);">
+        <pre>
+          <span class="keyword">&lt;html&gt;</span>
+          <span class="keyword">&lt;head&gt;</span>
+            <span class="keyword">&lt;script </span><span class="attr">src=</span><span class="value">&quot;bower_components/webcomponentsjs/webcomponents-lite.js&quot;</span><span class="keyword">&gt;&lt;/script&gt;</span>
+            <span class="keyword">&lt;link</span> <span class="attr">rel=</span><span class="value">&quot;import&quot;</span> <span class="attr">href=</span><span class="value">&quot;bower_components/paper-checkbox/paper-checkbox.html&quot;</span><span class="keyword">&gt;</span>
+            <span class="keyword">&lt;link</span> <span class="attr">rel=</span><span class="value">&quot;import&quot;</span> <span class="attr">href=</span><span class="value">&quot;bower_components/paper-slider/paper-slider.html&quot;</span><span class="keyword">&gt;</span>
+            <span class="keyword">&lt;link</span> <span class="attr">rel=</span><span class="value">&quot;import&quot;</span> <span class="attr">href=</span><span class="value">&quot;emoji-llate.html&quot;</span><span class="keyword">&gt;</span>
+          <span class="keyword">&lt;/head&gt;</span>
+          <span class="keyword">&lt;body</span> <span class="attr">unresolved</span><span class="keyword">&gt;</span>
+            <span class="keyword">&lt;template</span> <span class="attr">is=</span><span class="value">&quot;dom-bind&quot;</span> <span class="attr">id=</span><span class="value">&quot;t&quot;</span><span class="keyword">&gt;</span>
+              <span class="keyword">&lt;input</span> <span class="attr">type=</span><span class="value">&quot;file&quot;</span> <span class="attr">id=</span><span class="value">&quot;loader&quot;</span> <span class="attr">on-change=</span><span class="value">&quot;munge&quot;</span><span class="keyword">&gt;</span>
+              <span class="keyword">&lt;paper</span><span class="attr">-slider</span> <span class="attr">value=</span><span class="value">&quot;{{_value}}&quot;</span> <span class="attr">pin</span> <span class="attr">snaps</span> <span class="attr">step=</span><span class="value">5</span> <span class="attr">min=</span><span class="value">5</span> <span class="attr">max=</span><span class="value">80</span><span class="keyword">&lt;/paper-slider&gt;</span>
+              <span class="keyword">&lt;paper</span><span class="attr">-checkbox</span> <span class="attr">checked=</span><span class="value">&quot;{{_noBackground}}&quot;</span><span class="keyword">&gt;</span>hide background</span><span class="keyword">&lt;/paper-checkbox&gt;</span>
+
+              <span class="keyword">&lt;emoji-late</span> <span class="attr">id=</span><span class="value">&quot;go&quot;</span> <span class="attr">resolution=</span><span class="value">&quot;{{_value}}&quot;</span> <span class="attr">no-background=</span><span class="value">&quot;{{_noBackground}}&quot;</span><span class="keyword">&gt;</span>
+                <span class="keyword">&lt;div</span> <span class="attr">class=</span><span class="value">&quot;output&quot;</span><span class="keyword">&gt;&lt;/div&gt;</span>
+              <span class="keyword">&lt;/emoji-late&gt;</span>
+            <span class="keyword">&lt;/template&gt;</span>
+          <span class="keyword">&lt;/body&gt;</span>
+          <span class="keyword">&lt;script&gt;</span>
+            <span class="attr">t</span><span style="color: #f8f8f2">.</span><span class="attr">_value</span> <span class="keyword">=</span> <span style="color: #ae81ff">60</span><span style="color: #f8f8f2">;</span>
+            <span class="attr">t</span><span style="color: #f8f8f2">.</span><span class="attr">_noBackground</span> <span class="keyword">=</span> <span style="color: #66d9ef">false</span><span style="color: #f8f8f2">;</span>
+
+            <span class="attr">t</span><span style="color: #f8f8f2">.</span><span class="attr">munge</span> <span class="keyword">=</span> <span style="color: #66d9ef">function</span><span style="color: #f8f8f2">(</span><span class="attr">e</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">{</span>
+              <span class="attr">go</span><span style="color: #f8f8f2">.</span><span class="attr">file</span> <span class="keyword">=</span> <span class="attr">e</span><span style="color: #f8f8f2">.</span><span class="attr">target</span><span style="color: #f8f8f2">.</span><span class="attr">files</span><span style="color: #f8f8f2">[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">];</span>
+            <span style="color: #f8f8f2">}</span>
+          <span class="keyword">&lt;/script&gt;</span>
+          <span class="keyword">&lt;/html&gt;</span>
+          </pre></div>
         </pre>
       </div>
     </a-slide>
@@ -631,7 +673,6 @@
     -->
 
     <a-slide class="theme-yellow">
-      <div class="pretitle">what to use?</div>
       <div class="title">canvas <span class="text-magenta">vs</span> span </div>
     </a-slide>
 
@@ -743,6 +784,18 @@
 
     <a-slide class="theme-yellow" align-left>
       <div class="title">give the web<br><span class="text-magenta">better brushes</span></div>
+    </a-slide>
+
+    <a-slide class="dark-grey" align-center>
+      <div class="frame-title"><span class="text-og">Chris Joel: emoji word art</span></div>
+      <iframe src="http://meowni.ca/data-pipe-elements/" frameBorder="0"
+      onload="fitIframe(this)"></iframe>
+    </a-slide>
+
+    <a-slide class="dark-grey" align-center>
+      <div class="frame-title"><span class="text-og">Chris Joel: meatscope.camera</span></div>
+      <a href="https://meatscope.camera/" target="_blank">
+        <img src="images/meatscope.png" onload="fitImage(this)"></a>
     </a-slide>
 
     <a-slide class="theme-yellow" align-left>
